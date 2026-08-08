@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff4f81">
+  <meta name="description" content="Monthly monthsary reminder app">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Monthsary Reminder ❤️</title>
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="heart">❤️</div>
+      <h1>Monthsary Reminder</h1>
+      <p class="subtitle">Never miss your special day.</p>
+
+      <div class="counter">
+        <span id="months">29</span>
+        <small>MONTHS TOGETHER</small>
+      </div>
+
+      <div class="info">
+        <div><b>Monthsary:</b> Every <span id="dayText">8th</span> of the month</div>
+        <div><b>Reminder:</b> 12:00 AM</div>
+      </div>
+
+      <div id="status" class="status">Notifications are not enabled yet.</div>
+
+      <button id="notifyBtn" class="primary">🔔 Enable Notifications</button>
+      <button id="testBtn" class="secondary">🔊 Test Notification</button>
+      <button id="installBtn" class="secondary hidden">📱 Install App</button>
+
+      <details>
+        <summary>⚙️ Monthsary Settings</summary>
+        <label>Starting / anniversary date
+          <input id="dateInput" type="date" value="2024-03-08">
+        </label>
+        <label>Monthsary day
+          <input id="dayInput" type="number" min="1" max="31" value="8">
+        </label>
+        <button id="saveBtn" class="primary">Save Settings</button>
+      </details>
+
+      <p class="note">
+        Default setup: <b>29 months together</b>, monthsary on the <b>8th</b>, reminder at <b>12:00 AM</b>.
+      </p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
